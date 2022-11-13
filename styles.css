@@ -132,6 +132,20 @@ section {
     display: block;
   }
 
+  body {
+    max-width: 768px;
+  }
+
+  .inst-cr {
+    margin-right: 24px;
+  }
+
+  section {
+    margin-left: 24px;
+    padding-right: 24px;
+    max-width: 768px;
+  }
+
   #viz-gm {
     display: flex;
     justify-content: center;
