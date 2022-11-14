@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 a {
@@ -37,11 +38,6 @@ div {
   background-position: center;
 }
 
-.header-wrapper img {
-  width: 600px;
-  margin: auto;
-  display: block;
-}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -49,6 +45,10 @@ div {
 img {
   vertical-align: middle;
   border-style: none;
+}
+
+.zona-obs {
+  max-width: 100%;
 }
 
 .header-wrapper a,
@@ -61,9 +61,15 @@ img {
 }
 
 .header-wrapper img {
-  width: 600px;
-  margin: auto;
+  width: 100%;
+  margin: 0 0 0 8px;
   display: block;
+}
+
+.text-center.text-white {
+  margin-top: -80px;
+  font-size: 30px;
+  padding-bottom: 70px;
 }
 
 .text-center {
@@ -91,10 +97,9 @@ img {
   width: 400px;
 } */
 
-section {
-  margin-left: 24px;
-  padding-right: 24px;
-  max-width: 1600px;
+.main-section {
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .sec-3 {
@@ -111,7 +116,7 @@ section {
 
 .inst-cr {
   max-width: 950px;
-  margin-right: 50px;
+  margin-right: 0;
 }
 
 .inst-cr p:first-of-type {
@@ -124,7 +129,7 @@ section {
 
 .viz-gm {
   height: auto;
-  width: 500px;
+  width: 70%;
 }
 
 @media screen and (max-width: 768px) {
@@ -132,88 +137,30 @@ section {
     display: block;
   }
 
-  body {
-    max-width: 768px;
-  }
-
-  .inst-cr {
-    margin-right: 24px;
-  }
-
-  section {
-    margin-left: 24px;
-    padding-right: 24px;
-    max-width: 768px;
-  }
-
   #viz-gm {
     display: flex;
     justify-content: center;
   }
-}
 
-.tg {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.tg td {
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
-}
-
-.tg th {
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
-}
-
-.tg .tg-wa1i {
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.tg .tg-uzvj {
-  border-color: inherit;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.tg .tg-nrix {
-  text-align: center;
-  vertical-align: middle;
-}
-
-.tg .tg-8d8j {
-  text-align: center;
-  vertical-align: bottom;
-}
-
-@media screen and (max-width: 768px) {
-  .tg {
-    width: auto !important;
+  .row {
+    flex-direction: column;
+    align-items: center;
   }
-  .tg col {
-    width: auto !important;
+
+  .col-3 {
+    flex: auto;
+    max-width: 70%;
+    justify-content: center;
   }
-  .tg-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+
+  .text-center.text-white {
+    margin-top: -30px;
   }
+}
+
+ol,
+ul {
+  padding: 24px;
 }
 
 h1 {
