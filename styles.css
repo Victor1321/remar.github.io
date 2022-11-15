@@ -86,7 +86,6 @@ img {
 
 .col-3 {
   flex: 0 0 33%;
-  padding-bottom: 5px;
   max-width: 33%;
 }
 
@@ -150,8 +149,9 @@ img {
 
   .col-3 {
     flex: auto;
-    max-width: 70%;
+    max-width: 80%;
     justify-content: center;
+    padding-bottom: 6px;
   }
 }
 
