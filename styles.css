@@ -42,6 +42,7 @@ div {
   max-width: 100%;
   height: auto;
 }
+
 img {
   vertical-align: middle;
   border-style: none;
@@ -67,7 +68,7 @@ img {
 }
 
 .text-center.text-white {
-  margin-top: -80px;
+  margin-top: 0px;
   font-size: 30px;
   padding-bottom: 70px;
 }
@@ -91,11 +92,6 @@ img {
 .col-3 > a {
   font-size: 15px;
 }
-
-/* #logo {
-  height: auto;
-  width: 400px;
-} */
 
 .main-section {
   margin-left: 12px;
@@ -129,10 +125,14 @@ img {
 
 .viz-gm {
   height: auto;
-  width: 70%;
+  width: 95%;
 }
 
 @media screen and (max-width: 768px) {
+  .text-center.text-white {
+    font-size: 24px;
+  }
+
   .inst-container {
     display: block;
   }
@@ -152,10 +152,6 @@ img {
     max-width: 70%;
     justify-content: center;
   }
-
-  .text-center.text-white {
-    margin-top: -30px;
-  }
 }
 
 ol,
@@ -164,11 +160,11 @@ ul {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 h3 {
@@ -183,3 +179,56 @@ h3 {
 .bold {
   font-weight: bold;
 }
+
+/* TABEL --------------------------------------------*/
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-wa1i {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.tg .tg-nrix {
+  text-align: center;
+  vertical-align: middle;
+}
+.tg .tg-8d8j {
+  text-align: center;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 767px) {
+  .tg {
+    width: auto !important;
+  }
+  .tg col {
+    width: auto !important;
+  }
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* -------------------------------------------------------- */
