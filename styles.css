@@ -14,10 +14,17 @@ body {
 a {
   text-decoration: none;
   background-color: transparent;
+  color: #00e;
 }
 
-.header-wrapper {
-  padding-top: 30px;
+a:visited {
+  color: #551a8b;
+}
+a:hover {
+  color: #06e;
+}
+​ .header-wrapper {
+  padding-top: 24px;
   background: linear-gradient(
     180deg,
     rgba(70, 153, 221, 1) 45%,
@@ -149,7 +156,7 @@ img {
 
   .col-3 {
     flex: auto;
-    max-width: 80%;
+    max-width: 90%;
     justify-content: center;
     padding-bottom: 6px;
   }
@@ -242,8 +249,6 @@ h3 {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
